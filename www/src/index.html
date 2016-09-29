@@ -2,12 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title></title>
     <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery-1.11.3.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body>
     <div id="container">
+        <div class="roll">
+            <div><img src="images/roll1.jpg" /></div>
+            <div><img src="images/roll2.jpg" /></div>
+            <div><img src="images/roll3.jpg" /></div>
+            <div><img src="images/roll4.jpg" /></div>
+            <div class="roll_last"><img src="images/roll5.jpg" /></div>
+        </div>
         <div class="head">
             <span>帮5买，享帮帮</span>
             <ul>
@@ -60,6 +68,21 @@
             <div class="navLogo"></div>
         </div>
         <div class="banner">
+            <div class="hide">
+                <ul class="pro">
+                    <li><p class="p16"><span class="span4">当季流行 ></span><a href="#">T恤</a><a href="#">休闲裤</a><a href="#">条纹T</a><a href="#">牛仔裤</a><a href="#">针织运动裤</a><a href="#">潮T</a><a href="#">格子衬衫</a><a href="#">纯棉印花T恤</a></p></li>
+                    <li><p class="p16"><span class="span4">男士外套 ></span><a href="#">夹克</a><a href="#">风衣</a><a href="#">单西</a><a href="#">西服套装</a><a href="#">皮衣</a><a href="#">运动鞋</a><a href="#">棒球衫</a><a href="#">大衣</a><a href="#">工装外套</a></p></li>
+                    <li><p class="p16"><span class="span4">男士内搭 ></span><a href="#">衬衫</a><a href="#">T恤</a><a href="#">卫衣</a><a href="#">棒球衫</a><a href="#">针织衫/毛衣</a><a href="#">背心</a><a href="#">POLO衫</a></p></li>
+                    <li><p class="p16"><span class="span4">男士裤装 ></span><a href="#">休闲裤</a><a href="#">牛仔裤</a><a href="#">西裤</a><a href="#">小脚裤</a><a href="#">运动裤</a><a href="#">针织裤</a><a href="#">短裤</a><a href="#">工装裤</a><a href="#">9分裤</a></p></li>
+                    <li><p class="p16"><span class="span4">特色男装 ></span><a href="#">潮牌</a><a href="#">中老年</a><a href="#">大码</a><a href="#">职业装</a><a href="#">民族服饰</a><a href="#">中山装</a><a href="#">商务装</a><a href="#">套装</a></p></li>
+                    <li><p class="p16"><span class="span4">运动鞋 ></span><a href="#">运动鞋</a><a href="#">板鞋</a><a href="#">潮鞋</a><a href="#">运动拖鞋</a><a href="#">篮球鞋</a><a href="#">帆布鞋</a><a href="#">足球鞋</a><a href="#">健步鞋</a></p></li>
+                    <li><p class="p16"><span class="span4">运动服 ></span><a href="#">运动裤</a><a href="#">运动短裤</a><a href="#">运动T恤</a><a href="#">运动套装</a><a href="#">运动外套</a><a href="#">POLO衫</a><a href="#">运动T恤</a></p></li>
+                    <li><p class="p16"><span class="span4">户外鞋服 ></span><a href="#">冲锋衣</a><a href="#">防晒衣</a><a href="#">速干T恤</a><a href="#">速干裤</a><a href="#">溯溪鞋</a><a href="#">登山鞋</a><a href="#">潜水服</a></p></li>
+                    <li><p class="p16"><span class="span4">户外用品 ></span><a href="#">吊杆</a><a href="#">双肩背包</a><a href="#">户外包</a><a href="#">帐篷</a><a href="#">手电筒</a><a href="#">防滑手电</a><a href="#">刀具</a></p></li>
+                    <li><p class="p16"><span class="span4">运动用品 ></span><a href="#">泳衣</a><a href="#">跑步机</a><a href="#">自行车</a><a href="#">踏步机</a><a href="#">瑜伽垫</a><a href="#">轮滑</a><a href="#">羽毛球拍</a><a href="#">运动护具</a></p></li>
+                </ul>
+                <img src="images/fakelogo.jpg" />
+            </div>
             <div class="sideban">
                 <ul>
                     <li><img src="images/sideban1.jpg" /><a href="#">手机</a><a href="#">数码</a><a href="#">影音</a><a href="#">配件</a></li>
@@ -77,7 +100,21 @@
                     <li><img src="images/sideban13.jpg" /><a href="#">图书</a><a href="#">音乐</a><a href="#">影视</a><a href="#">教育</a></li>
                 </ul>
             </div>
-            <div class="scroll"></div>
+            <div class="scroll">
+                <ul id="scroll">
+                    <li class="liFirst"><img src="images/scroll_1.jpg" /></li>
+                    <li><img src="images/scroll_2.jpg" /></li>
+                    <li><img src="images/scroll_3.jpg" /></li>
+                    <li><img src="images/scroll_4.jpg" /></li>
+                    <li><img src="images/scroll_1.jpg" /></li>
+                </ul>
+                <div class="btn2">
+                    <span class="hover"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
             <div class="underScroll">
                 <dl class="dl1">
                     <dt>精装春秋双宫茧蚕丝被</dt>
@@ -130,7 +167,18 @@
                         </dl>
                     </div>
                 </div>
-                <div class="banner2"></div>
+                <div class="banner2">
+                    <ul>
+                        <li><img src="images/banner2_1.jpg" /></li>
+                        <li><img src="images/banner2_1.jpg" /></li>
+                        <li><img src="images/banner2_1.jpg" /></li>
+                    </ul>
+                    <div class="btn3">
+                        <span class="banner2_1"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content">
@@ -255,6 +303,55 @@
                             </dd>
                         </dl>
                     </div>
+                    <div class="f2Hide">
+                        <div class="f2hide_up">
+                            <div><img src="images/f2hide_up1.jpg" /></div>
+                            <div><img src="images/f2hide_up2.jpg" /></div>
+                            <div><img src="images/f2hide_up3.jpg" /></div>
+                        </div>
+                        <div class="f2hide_down">
+                            <dl>
+                                <dt class="dt12"></dt>
+                                <dd>
+                                    <P class="p4"> 月销量<span>21</span>件</P>
+                                    <p class="p5">VDL 修颜妆前乳提亮液 30ml</p>
+                                    <p class="p6">¥<span>145&nbsp;6.0折</span></p>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="dt8"></dt>
+                                <dd>
+                                    <P class="p4"> 月销量<span>23</span>件</P>
+                                    <p class="p5">Skin food 思亲夫 黄金鱼子酱</p>
+                                    <p class="p6">¥<span>105&nbsp;5.4折</span></p>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="dt9"></dt>
+                                <dd>
+                                    <P class="p4"> 月销量<span>25</span>件</P>
+                                    <p class="p5">Stylenanda 3CE Paint</p>
+                                    <p class="p6">¥<span>80&nbsp;6.7折</span></p>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="dt10"></dt>
+                                <dd>
+                                    <P class="p4"> 月销量<span>31</span>件</P>
+                                    <p class="p5">It's Skin 伊思 晶钻蜗牛霜</p>
+                                    <p class="p6">¥<span>279&nbsp;7.6折</span></p>
+                                </dd>
+                            </dl>
+                            <dl class="dl7">
+                                <dt class="dt11"></dt>
+                                <dd>
+                                    <P class="p4"> 月销量<span>12</span>件</P>
+                                    <p class="p5">Etude House 爱丽小屋 珍珠</p>
+                                    <p class="p6">¥<span>75&nbsp;6.3折</span></p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="f3">
@@ -276,7 +373,6 @@
                 <div class="f3_right">
                     <ul class="ul2">
                         <li class="li4">热门推荐</li>
-                        <li>发现好娱乐</li>
                     </ul>
                     <div class="f3_right_up">
                         <div><img src="images/f3_right_up1.jpg" /></div>
@@ -322,7 +418,20 @@
                         </div>
                     </dd>
                 </dl>
-                <div class="f4_right"></div>
+                <div class="banner3">
+                    <ul>
+                        <li><img src="images/banner3_1.jpg" /></li>
+                        <li><img src="images/banner3_1.jpg" /></li>
+                        <li><img src="images/banner3_1.jpg" /></li>
+                        <li><img src="images/banner3_1.jpg" /></li>
+                    </ul>
+                    <div class="btn4">
+                        <span class="banner3_1"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
             <div class="f5">
                 <p class="p97"><span class="span2"><span class="span3">5F</span> 大家正在买</span></p>
@@ -410,7 +519,7 @@
                             <dd>
                                 <p class="p11">帮5买用户</p>
                                 <p>包邮5L/8L喷雾器农园气压喷壶喷水壶浇水壶手动打药机消毒洗车</p>
-                                <p class="p12">将获得40超级帮钻奖励</p>
+                                <p class="p12">将获得40超级帮钻</p>
                             </dd>
                         </dl>
                         <dl>
@@ -418,7 +527,7 @@
                             <dd>
                                 <p class="p11">帮5买用户</p>
                                 <p>B80C2300-1500 B80C1500进口 DIOTEC全新原装正品 可直拍</p>
-                                <p class="p12">将获得39超级帮钻奖励</p>
+                                <p class="p12">将获得39超级帮钻</p>
                             </dd>
                         </dl>
                         <dl>
@@ -426,7 +535,7 @@
                             <dd>
                                 <p class="p11">帮5买用户</p>
                                 <p>日单新品 优雅甜美深蓝色星空蕾丝大珍珠拉链防水内层化妆收纳包</p>
-                                <p class="p12">将获得58超级帮钻奖励</p>
+                                <p class="p12">将获得58超级帮钻</p>
                             </dd>
                         </dl>
                         <dl>
@@ -434,7 +543,7 @@
                             <dd>
                                 <p class="p11">帮5买用户</p>
                                 <p>得力7505 双排打价机 标价机 打码机 超市价格机</p>
-                                <p class="p12">将获得63超级帮钻奖励</p>
+                                <p class="p12">将获得63超级帮钻</p>
                             </dd>
                         </dl>
                         <dl>
@@ -442,7 +551,7 @@
                             <dd>
                                 <p class="p11">帮5买用户</p>
                                 <p>RARAMAX2015秋季新款欧美无锁边设计个性立领宽松包袖连衣裙女</p>
-                                <p class="p12">将获得320超级帮钻奖励</p>
+                                <p class="p12">将获得320超级帮钻</p>
                             </dd>
                         </dl>
                         <dl>
@@ -450,13 +559,88 @@
                             <dd>
                                 <p class="p11">帮5买用户</p>
                                 <p>姜茶 红糖姜茶 老姜茶 生姜红糖茶 速溶姜茶 红糖老姜茶 250g</p>
-                                <p class="p12">将获得12超级帮钻奖励</p>
+                                <p class="p12">将获得12超级帮钻</p>
                             </dd>
                         </dl>
                     </div>
                 </div>
             </div>
-                //dfsdf
+            <div class="logos">
+                <div class="logos_left">电商精选</div>
+                <div class="logos_right">
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#" class="logos_li2"></a></li>
+                        <li><a href="#" class="logos_li3"></a></li>
+                        <li><a href="#" class="logos_li4"></a></li>
+                        <li><a href="#" class="logos_li5"></a></li>
+                        <li><a href="#" class="logos_li6"></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" class="logos_li7"></a></li>
+                        <li><a href="#" class="logos_li8"></a></li>
+                        <li><a href="#" class="logos_li9"></a></li>
+                        <li><a href="#" class="logos_li10"></a></li>
+                        <li><a href="#" class="logos_li11"></a></li>
+                        <li><a href="#" class="logos_li12"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="link">
+                <div class="linkLogo"><img src="images/foot1.jpg" /></div>
+                <ul>
+                    <li class="first">购物指南</li>
+                    <li><a href="#">帮5买品牌</a></li>
+                    <li><a href="#">帮5买帮购服务</a></li>
+                    <li><a href="#">购物流程</a></li>
+                    <li><a href="#">订单状态</a></li>
+                    <li><a href="#">帮钻说明</a></li>
+                    <li><a href="#">常见问题</a></li>
+                </ul>
+                <ul>
+                    <li class="first">支付方式</li>
+                    <li><a href="#">超级帮钻支付</a></li>
+                    <li><a href="#">支付平台</a></li>
+                    <li><a href="#">网银支付</a></li>
+                    <li><a href="#">快捷支付</a></li>
+                </ul>
+                <ul>
+                    <li class="first">售后服务</li>
+                    <li><a href="#">韩国城售后</a></li>
+                    <li><a href="#">帮购售后</a></li>
+                    <li><a href="#">取消订单</a></li>
+                    <li><a href="#">退款说明</a></li>
+                    <li><a href="#">投诉建议</a></li>
+                    <li><a href="#">客服电话流程</a></li>
+                </ul>
+                <ul>
+                    <li class="first">VIP服务</li>
+                    <li><a href="#">商品补贴</a></li>
+                    <li><a href="#">全网包邮</a></li>
+                    <li><a href="#">VIP商品</a></li>
+                    <li><a href="#">先赔闪退</a></li>
+                    <li><a href="#">购物返超级帮钻</a></li>
+                </ul>
+                <div class="erweima"><img src="images/erweima.jpg" /></div>
+            </div>
+            <div class="bottom">
+                <ul>
+                   <li><a href="#">关于帮5买</a></li>
+                   <li><a href="#">联系我们</a></li>
+                   <li><a href="#">合作商家</a></li>
+                   <li><a href="#">友情链接</a></li>
+                   <li><a href="#">加入我们</a></li>
+                   <li><a href="#">移动应用</a></li>
+                   <li><a href="#">热门</a></li>
+                   <li><a href="#">广告联盟</a></li>
+                   <li><a href="#" class="a4">使用条款</a></li>
+                </ul>
+                <p>Copyright &copy; 2011-2015 B5M.COM.All rights reserved.Powered by B5Msoft Co.,Ltd</p>
+                <p>增值电信业务经营许可证：沪B2-20130065号|中华人民共和国互联网药品信息服务资格证书(沪)-非经营性-2013-0034 沪卫中医网审【2015】10032号 沪ICP备11034776号-3|食品流通许可证:sp3001151410301755</p>
+                <p><img src="images/police.jpg" /></p>
+            </div>
         </div>
     </div>
 </body>
