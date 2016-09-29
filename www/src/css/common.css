@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 12px;
+    position: absolute;
+}
+image{
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+#container{
+    width: 1263px;
+    height: auto;
+    margin: 0 auto;
+}
+.roll{
+    width: 60px;
+    height: 323px;
+    position: fixed;
+    right: 0;
+    bottom: 80px;
+    background-color: #fff;
+    z-index: 100;
+    border-left: 1px solid #efefef;
+    border-top: 1px solid #efefef;
+    display: none;
+}
+.roll div{
+    border-bottom: 1px solid #efefef;
+    cursor: pointer;
+}
+.head{
+    width: 1223px;
+    height: 28px;
+    padding-left: 40px;
+    color: #999;
+    position: relative;
+}
+.head span{
+    line-height: 28px;
+}
+.head ul{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 814px;
+    height: 28px;
+}
+.head ul li{
+    float: left;
+    line-height: 28px;
+}
+.head ul li a{
+    padding: 0 9px;
+    color: #999;
+}
+.head ul li a:hover{
+    color: green;
+}
+.head ul li a img{
+    vertical-align: middle;
+}
+.span1{
+    color: #ff7800;
+}
+.search{
+    width: 1263px;
+    height: 79px;
+    position: relative;
+}
+.logo{
+    width: 238px;
+    height:79px;
+    margin-left: 41px;
+    background: url("../images/logo.jpg");
+}
+.find{
+    width: 578px;
+    height: 40px;
+    position: absolute;
+    left: 306px;
+    top: 10px;
+    background-color: green;
+}
+.txt{
+    width: 480px;
+    height: 38px;
+    border: none;
+    border: 1px solid #ff7800;
+    float: left;
+    padding-left: 18px;
+}
+.btn{
+    width: 78px;
+    height: 40px;
+    border: none;
+    float: left;
+    background-color: #ff7800;
+    color: #fff;
+    font-size: 16px;
+}
+.hot{
+    width: 578px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 306px;
+}
+.hot li{
+    float: left;
+}
+.hot li a{
+    padding: 0 8px;
+    line-height: 20px;
+    color: #666;
+}
+.hot li a:hover{
+    color: red;
+}
+.hot li .hotBest{
+    color: #ff3f00;
+}
+.logo2{
+    width: 225px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    right: 36px;
+    background: url("../images/logo2.jpg");
+}
+
+
+.foot{
+    width: 1263px;
+    height: 348px;
+    background-color: #f7f7f7;
+}
+.link{
+    width: 1181px;
+    height: 205px;
+    margin-left: 42px;
+    border: 2px solid #efefef;
+    border-left: none;
+    border-right: none;
+
+}
+.linkLogo{
+    width: 161px;
+    height: 162px;
+    float: left;
+    margin-top: 25px;
+}
+.link ul{
+    float:left;
+    margin-top: 25px;
+    margin-left: 90px;
+}
+.link ul li{
+    line-height: 25px;
+}
+.link ul li a{
+    color: #666;
+}
+.link ul .first{
+    font-size: 16px;
+}
+.erweima{
+    width: 140px;
+    height: 164px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 90px;
+}
+.bottom{
+    width: 1263px;
+    height: 144px;
+    text-align: center;
+}
+.bottom ul{
+    width: 685px;
+    height: 27px;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+.bottom ul li{
+    float: left;
+}
+.bottom ul li a{
+    padding: 0 12px;
+    color: #666;
+    border-right: 1px solid #333;
+}
+.bottom .a4{
+    border: none;
+}
+.bottom p{
+    color: #999;
+    line-height: 25px;
+}

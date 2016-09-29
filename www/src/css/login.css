@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+img{
+    border: none;
+}
+#container{
+    width: 1263px;
+    height: 700px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    position: relative;
+}
+.con{
+    width: 632px;
+    height: 640px;
+    position: absolute;
+    left: 315px;
+    top: 25px;
+}
+.logo{
+    width: 312px;
+    height: 108px;
+    margin-top: 45px;
+    margin-left: 161px;
+    background: url("../images/login/logo.jpg") no-repeat;
+}
+.con h1{
+    font-size: 32px;
+    margin-left: 48px;
+    margin-top: 28px;
+}
+.p1{
+    margin-left: 140px;
+    margin-top: 66px;
+    color: #666;
+    cursor: pointer;
+    width: 120px;
+}
+.form{
+    width: 353px;
+    height: 95px;
+    margin-top: 21px;
+    margin-left: 140px;
+}
+.form input{
+    width: 338px;
+    height: 45px;
+    border: 1px solid #eee;
+    padding-left: 10px;
+}
+.form .txt{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.form .txt2{
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.p2{
+    margin-left: 140px;
+    margin-top: 12px;
+    line-height: 28px;
+    color: #999;
+}
+.p2 img{
+    vertical-align: middle;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.p2 a{
+    color: #999;
+    margin-left: 85px;
+}
+.btn1, .btn2{
+    width: 340px;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 143px;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+}
+.btn1{
+    background-color: #f78b02;
+    color: #fff;
+}
+.btn2{
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    color: #999;
+}
