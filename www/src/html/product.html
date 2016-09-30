@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>商品详情</title>
-    <link rel="stylesheet" href="../css/product.css" />
     <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/product.css" />
+    <link rel="stylesheet" href="../css/jquery-ui.css" />
     <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/jquery-ui.js"></script>
     <script src="../js/product.js"></script>
 </head>
 <body>
@@ -31,7 +33,7 @@
         <div class="search">
             <div class="logo"></div>
             <div class="find">
-                <input placeholder="输入商品网址或关键词,直通全网,快速帮购!" class="txt" />
+                <input placeholder="输入商品网址或关键词,直通全网,快速帮购!" class="txt" id="tags" />
                 <input type="button" class="btn" value="帮5搜" />
             </div>
             <ul class="hot">
@@ -46,6 +48,175 @@
             </ul>
             <div class="logo2"></div>
         </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">超划算</a></li>
+                <li><a href="#">品牌货栈</a></li>
+                <li><a href="#">逛街</a></li>
+                <li><a href="#">发现</a></li>
+            </ul>
+            <span>返利说明 <img src="../images/product/p.jpg" /></span>
+        </div>
+        <p class="title">所有分类<span> > 移动4g网络智能手机 5寸超薄安卓四核 LEPHONE/立丰 T708青春版</span></p>
+        <div class="phone">
+            <div class="pic"><img src="../images/product/phone1.jpg" /></div>
+            <div class="small_pic">
+                <div class="btn_left"><</div>
+                <div class="sPic"><img src="../images/product/small_phone.jpg" /></div>
+                <div class="btn_right">></div>
+            </div>
+            <p class="save">
+                <img src="../images/product/save.jpg" />
+                <span class="span2">收藏</span>
+                <span class="span3">分享到:</span>
+                <img src="../images/login/login_qq.jpg" />
+                <img src="../images/login/login_qq2.jpg" />
+                <img src="../images/login/login_qq3.jpg" />
+            </p>
+            <ul class="feature">
+                <li><img src="../images/product/phoneUl1.jpg" /><span>全场包邮 低价保障</span></li>
+                <li><img src="../images/product/phoneUl2.jpg" /><span>100%返利</span></li>
+                <li><img src="../images/product/phoneUl3.jpg" /><span>24小时闪电发货</span></li>
+                <li><img src="../images/product/phoneUl4.jpg" /><span>100%人工抽检</span></li>
+                <li><img src="../images/product/phoneUl5.jpg" /><span>先赔闪退</span></li>
+            </ul>
+            <div class="phone_mid">
+                <p class="p1">移动4G网络智能手机 5寸超薄安卓四核 LEPHONE/立丰 T708青春版</p>
+                <div class="price">
+                    <div class="price1">价格</div>
+                    <div class="price2">
+                        <p><span class="span4">¥599.00</span> <s>999.00</s></p>
+                        <p class="p2">购买后再返30%: <span class="span4"> -179.70</span></p>
+                    </div>
+                </div>
+                <p class="p3">福利:<span class="span5">返</span><span class="span6">购买后约返17970超级帮钻</span></p>
+                <p class="p4"><span class="span5">减</span><span class="span6">VIP用户每件至少补贴1元</span></p>
+                <p class="p4"><span class="span5">免</span><span class="span6">全场商品限时包邮</span></p>
+                <p class="p5">销量:<span class="span7">1245</span><span>件</span></p>
+                <p class="p6">机身颜色<span class="color">白色</span><span class="color2">黑色</span></p>
+                <p class="p7">套餐类型<span class="type">官方标配</span></p>
+            </div>
+            <div class="phone_mid2">
+                <p>数量<span class="less">-</span><input class="num" value="1" /><span class="more">+</span> <span class="span8">件</span>(库存100件)</p>
+                <div class="buy">立即抢购</div>
+            </div>
+            <div class="sideban">
+                <p class="look">看了又看<img src="../images/product/recycle.jpg" /></p>
+                <dl>
+                    <dt><img src="../images/product/sidebanDl1.jpg" /></dt>
+                    <dd>
+                        <p class="p8">¥29.30元</p>
+                        <p class="p9">熊猫伯伯 新疆特产红枣和田大枣子六星袋装500g</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/product/sidebanDl2.jpg" /></dt>
+                    <dd>
+                        <p class="p8">¥3387.00元</p>
+                        <p class="p9">苹果(APPLE)iPhone5s(A1503)16GB金色 移动联通4G手机</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="down">
+            <div class="sidedown">
+                <div class="side1">
+                    <p class="ti">&nbsp;热销推荐</p>
+                    <dl>
+                        <dt><img src="../images/product/side1.jpg" /></dt>
+                        <dd>
+                            <p>Secret Key 斯科力 小浣熊黄金眼影 30对眼膜</p>
+                            <p class="p10">￥30</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="../images/product/side2.jpg" /></dt>
+                        <dd>
+                            <p>Holika Holika 缤纷马卡龙三色眼影 2.5g</p>
+                            <p class="p10">￥39</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="../images/product/side3.jpg" /></dt>
+                        <dd>
+                            <p>It's Skin 伊思 babyface 木质眉笔 得劲儿</p>
+                            <p class="p10">￥25</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="../images/product/side4.jpg" /></dt>
+                        <dd>
+                            <p>The Face Shop 菲诗小铺 ECO自然阳光霜</p>
+                            <p class="p10">￥69</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="../images/product/side5.jpg" /></dt>
+                        <dd>
+                            <p>Secret Key 斯科力 蜗牛冰肌霜 贼好用</p>
+                            <p class="p10">￥5</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="side1">
+                    <p class="ti">&nbsp;超划算</p>
+                    <dl>
+                        <dt><img src="../images/product/side6.jpg" /></dt>
+                        <dd>
+                            <p>汇源 沙小甘 甘草植物饮料润喉饮料利乐装</p>
+                            <p class="p10">￥57.6</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="../images/product/side2.jpg" /></dt>
+                        <dd>
+                            <p>乔府大院 精品化妆 照亮你的美 5KG</p>
+                            <p class="p10">￥77.9</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="../images/product/side8.jpg" /></dt>
+                        <dd>
+                            <p>天喔茶庄 蜂蜜菊花茶 果味茶饮料 整箱16瓶装</p>
+                            <p class="p10">￥25.6</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="../images/product/side9.jpg" /></dt>
+                        <dd>
+                            <p>光明 莫斯利安 常温酸奶 200g*12盒</p>
+                            <p class="p10">￥54.8</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="../images/product/side10.jpg" /></dt>
+                        <dd>
+                            <p>雀巢咖啡 1+2 原装 700g/袋 包装更换更酷炫</p>
+                            <p class="p10">￥38</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="infomation"></div>
+                <div class="back"></div>
+                <div class="safeguard"></div>
+            </div>
+        </div>
+        <div class="hide">
+            <ul>
+                <li class="hide_li1"><img src="../images/product/hide1.jpg" />商品详情</li>
+                <li><img src="../images/product/hide2.jpg" />返利说明</li>
+                <li><img src="../images/product/hide3.jpg" />消费保障</li>
+            </ul>
+            <div class="hideBuy">立即购买</div>
+        </div>
+        <div class="roll">
+            <div class="consult"></div>
+            <div class="cart"></div>
+            <div class="top"></div>
+        </div>
+
 
         <div class="foot">
             <div class="link">

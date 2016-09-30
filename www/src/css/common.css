@@ -20,22 +20,6 @@ ul li{
     height: auto;
     margin: 0 auto;
 }
-.roll{
-    width: 60px;
-    height: 323px;
-    position: fixed;
-    right: 0;
-    bottom: 80px;
-    background-color: #fff;
-    z-index: 100;
-    border-left: 1px solid #efefef;
-    border-top: 1px solid #efefef;
-    display: none;
-}
-.roll div{
-    border-bottom: 1px solid #efefef;
-    cursor: pointer;
-}
 .head{
     width: 1223px;
     height: 28px;
