@@ -138,7 +138,7 @@ $(function() {
         $(this).stop().animate({
             "opacity" : 1
         },500)
-    })
+    }) 
 });
 $(window).scroll(function(){
     var $t = $(this).scrollTop();
