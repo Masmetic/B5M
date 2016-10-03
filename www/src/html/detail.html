@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/detail.css" />
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/detail.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="head">
+            <span>帮5买，享帮帮</span>
+            <ul>
+                <li><a href="#"><img src="../images/head1.jpg" /></a></li>
+                <li><a href="#"><img src="../images/head2.jpg" /></a></li>
+                <li><a href="#"><img src="../images/head3.jpg" /></a></li>
+                <li><a href="../html/login.html">登录</a></li>
+                <li><a href="../html/register.html">注册</a></li>
+                <li><a href="#"><img src="../images/head4.jpg" /> 消息</a></li>
+                <li><a href="#"><img src="../images/head5.jpg" /> 我的订单</a></li>
+                <li><a href="#">我的收藏</a></li>
+                <li><a href="#">帮钻兑换</a></li>
+                <li><a href="#"><img src="../images/head6.jpg" /> 手机版</a></li>
+                <li><a href="#">帮5淘</a></li>
+                <li><a href="#">客户服务</a></li>
+                <li><a href="#"><img src="../images/head7.jpg" /> 购物车 <span class="span1">0</span></a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <div class="logo"></div>
+            <div class="find">
+                <input placeholder="输入商品网址或关键词,直通全网,快速帮购!" class="txt" id="tags" />
+                <input type="button" class="btn" value="帮5搜" />
+            </div>
+            <ul class="hot">
+                <li><a href="#" class="hotBest">韩国美衣59起</a></li>
+                <li><a href="#" class="hotBest">韩国美妆1折</a></li>
+                <li><a href="#">杏花楼月饼</a></li>
+                <li><a href="#">自拍杆</a></li>
+                <li><a href="#">双肩背包</a></li>
+                <li><a href="#">连衣裙秋</a></li>
+                <li><a href="#">iPhone u盘</a></li>
+                <li><a href="#">大闸蟹</a></li>
+            </ul>
+            <div class="logo2"></div>
+        </div>
+        <div class="menu">
+            <div class="allstyle">全部商品分类</div>
+            <ul class="nav">
+                <li><a href="#" class="firstPage">首页</a></li>
+                <li><a href="#">超划算</a></li>
+                <li><a href="#">韩国商城</a></li>
+                <li><a href="#">韩国馆</a></li>
+                <li><a href="#">超级任务</a></li>
+                <li><a href="#">帮社区</a></li>
+                <li class="li1"><img src="../images/nav1.jpg" /></li>
+                <li class="li2"><img src="../images/nav2.jpg" /></li>
+                <li class="li3"><img src="../images/nav3.jpg" /></li>
+            </ul>
+            <div class="navLogo"></div>
+        </div>
+        <div class="about">
+            <ul>
+                <li class="one">相关搜索:</li>
+                <li><a href="#">乐视手机</a></li>
+                <li><a href="#">手机 VIVO</a></li>
+                <li><a href="#">vivo手机</a></li>
+                <li><a href="#">手机 oppo</a></li>
+                <li><a href="#">小米4手机</a></li>
+                <li><a href="#">手机 htc</a></li>
+                <li><a href="#">老年手机</a></li>
+                <li><a href="#">合约机 手机</a></li>
+                <li><a href="#">手机热销</a></li>
+            </ul>
+        </div>
+        <ul class="type">
+            <li><a href="#" class="t1 t2">全网搜索</a></li>
+            <li><a href="#">淘宝</a></li>
+            <li><a href="#">天猫</a></li>
+            <li><a href="#">京东</a></li>
+            <li><a href="#">苏宁</a></li>
+            <li><a href="#">当当</a></li>
+            <li><a href="#">国美</a></li>
+            <li><a href="#">一号店</a></li>
+        </ul>
+        <div class="allNet">
+            全网搜索 > 手机 | 共 1.8万 个商品
+        </div>
+        <div class="introduce">
+            <ul>
+                <li class="li4">商品来源:</li>
+                <li><a href="#">京东商城</a></li>
+                <li><a href="#">天猫</a></li>
+                <li><a href="#">淘宝网</a></li>
+                <li><a href="#">一号店</a></li>
+                <li><a href="#">当当网</a></li>
+                <li><a href="#">易迅网</a></li>
+                <li><a href="#">苏宁易购</a></li>
+                <li><a href="#">国美在线</a></li>
+                <li><a href="#">亚马逊</a></li>
+                <span class="span2">多选</span>
+                <span class="span3">展开<img src="../images/detail/down.jpg" /></span>
+            </ul>
+            <ul>
+                <li class="li4">商品分类:</li>
+                <li><a href="#">手机</a></li>
+                <li><a href="#">平板电脑</a></li>
+                <li><a href="#">手机数码配件</a></li>
+                <li><a href="#">户外装备</a></li>
+                <li><a href="#">内饰</a></li>
+                <li><a href="#">数码影音</a></li>
+            </ul>
+            <ul>
+                <li class="li4">操作系统:</li>
+                <li><a href="#">无操作系统</a></li>
+                <li><a href="#">小米</a></li>
+                <li><a href="#">flyme</a></li>
+                <li><a href="#">ios</a></li>
+                <li><a href="#">yunos</a></li>
+                <li><a href="#">老人手机</a></li>
+                <span class="span4">多选</span>
+            </ul>
+            <ul>
+                <li class="li4">后置摄像头:</li>
+                <li><a href="#">1300万</a></li>
+                <li><a href="#">800万</a></li>
+                <li><a href="#">30万</a></li>
+                <li><a href="#">无摄像头</a></li>
+                <li><a href="#">2070万</a></li>
+                <li><a href="#">500万</a></li>
+                <li><a href="#">8万</a></li>
+                <li><a href="#">2000万</a></li>
+                <li><a href="#">130万</a></li>
+                <span class="span2">多选</span>
+                <span class="span3">展开<img src="../images/detail/down.jpg" /></span>
+            </ul>
+            <ul class="last">
+                <li class="li4">款式:</li>
+                <li><a href="#">直板</a></li>
+                <li><a href="#">翻盖</a></li>
+            </ul>
+        </div>
+        <div class="other">其他属性<span>(核心数,触摸屏类型等)</span></div>
+        <div class="sort">
+            <div class="sort1">销量<img src="../images/detail/xia1.jpg" /></div>
+            <div class="sort1">价格<img src="../images/detail/xia2.jpg" /></div>
+            <div class="sort2">
+                价格区间&nbsp;<input placeholder="¥" /> - <input placeholder="¥" /><button class="btn2">确定</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="col">
+                <dl>
+                    <dt><img src="../images/detail/content1.jpg" /></dt>
+                    <dd>
+                        <p class="p1">移动4G网络智能手机 5寸超薄安卓四核 LEPHONE/立丰 T708青春版</p>
+                        <p class="p2">￥599.00<img src="../images/detail/worth.jpg" /></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content2.jpg" /></dt>
+                    <dd>
+                        <p class="p1">Farda/锋达通 w2014 电信移动联通翻盖智能 安卓3g双模双待手机</p>
+                        <p class="p2">￥668.00<img src="../images/detail/worth.jpg" /></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content3.jpg" /></dt>
+                    <dd>
+                        <p class="p1">Apple iphone5s(A1503)16GB金色 移动联通4g手机(自拍专用套装)</p>
+                        <p class="p2">￥3647.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售99738件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content4.jpg" /></dt>
+                    <dd>
+                        <p class="p1">Apple iphone5s(A1503)16GB金色 移动联通4g手机 最好的手机送给你</p>
+                        <p class="p2">￥3588.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售99738件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content5.jpg" /></dt>
+                    <dd>
+                        <p class="p1">荣耀6(H60-L01)3GB内存标准版 白色 移动4G手机 超级酷炫 不买就是亏了</p>
+                        <p class="p2">￥1499.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售97145件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content6.jpg" /></dt>
+                    <dd>
+                        <p class="p1">【豪华套餐版】华为 荣耀 3X畅玩版(G750-T01)白色 移动3g手机 双卡双待</p>
+                        <p class="p2">￥1099.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售96872件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content7.jpg" /></dt>
+                    <dd>
+                        <p class="p1">联想 乐檬K3(K30-T)16G 清新白 移动4G手机 双卡双待</p>
+                        <p class="p2">￥599.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售99738件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content8.jpg" /></dt>
+                    <dd>
+                        <p class="p1">【套装版】酷派 大神 F2(8675-HD)智尚白 移动版4G手机 双卡双待</p>
+                        <p class="p2">￥799.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售90202件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content9.jpg" /></dt>
+                    <dd>
+                        <p class="p1">Huawei/华为 荣耀畅玩4C 移动电信智能手机 4G安卓手机</p>
+                        <p class="p2">￥1099.00<img src="../images/detail/tb.jpg" class="jd" /><span>已售72237件</span></p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col">
+                <dl>
+                    <dt><img src="../images/detail/content10.jpg" /></dt>
+                    <dd>
+                        <p class="p1">卫小宝 儿童智能手表 手表GPS智能定位手环 小孩防丢跟踪器 插卡通话 亲子手环</p>
+                        <p class="p2">￥399.00<img src="../images/detail/worth.jpg" /></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content11.jpg" /></dt>
+                    <dd>
+                        <p class="p1">LEPHONE/立丰 T303 移动4G网络 安卓智能手机 超薄四核 正品包邮</p>
+                        <p class="p2">￥249.00<img src="../images/detail/worth.jpg" /></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content12.jpg" /></dt>
+                    <dd>
+                        <p class="p1">Apple iphone5s(A1503)16GB金色 移动联通4g手机(配移动电源套装)</p>
+                        <p class="p2">￥3687.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售99738件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content13.jpg" /></dt>
+                    <dd>
+                        <p class="p1">Apple iphone4s(A1503)8GB金色 移动联通3g手机(配移动电源套装)</p>
+                        <p class="p2">￥1577.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售98745件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content14.jpg" /></dt>
+                    <dd>
+                        <p class="p1">诺基亚(NOKIA) 1050 (RM-1120)蓝色 移动联通2g手机</p>
+                        <p class="p2">￥119.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售97145件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content15.jpg" /></dt>
+                    <dd>
+                        <p class="p1">Apple iphone6(A1503)16GB金色 移动联通4g手机(配移动电源套装)</p>
+                        <p class="p2">￥4888.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售96730件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content16.jpg" /></dt>
+                    <dd>
+                        <p class="p1">酷派 大神 F2(8675-HD)智尚白 移动版4G手机 双卡双待</p>
+                        <p class="p2">￥599.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售99738件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content17.jpg" /></dt>
+                    <dd>
+                        <p class="p1">21g MC001s 黑色 移动联通2g 简单老人机 孝敬老人必备</p>
+                        <p class="p2">￥299.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售81283件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content18.jpg" /></dt>
+                    <dd>
+                        <p class="p1">Apple iPhone 4s 8gb 黑色 3g手机 最好的手机 送给最好的你</p>
+                        <p class="p2">￥1498.00<img src="../images/detail/tb.jpg" class="jd" /><span>已售67993件</span></p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col">
+                <dl>
+                    <dt><img src="../images/detail/content19.jpg" /></dt>
+                    <dd>
+                        <p class="p1">Farda/锋达通 w2014 电信移动联通翻盖智能 安卓3g双模双待手机</p>
+                        <p class="p2">￥249.00<img src="../images/detail/worth.jpg" /></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content20.jpg" /></dt>
+                    <dd>
+                        <p class="p1">小米红米 note 双卡双待 智能手机 送给最好的你 最好的礼物</p>
+                        <p class="p2">￥828.00<img src="../images/detail/worth.jpg" /></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content21.jpg" /></dt>
+                    <dd>
+                        <p class="p1">小米 红米 2A 旗舰版 全网卖疯了 你还不来么 买到就是赚到</p>
+                        <p class="p2">￥499.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售99738件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content22.jpg" /></dt>
+                    <dd>
+                        <p class="p1">Apple iPhone 4s 8gb 白色 3g手机 给你最好的手机体验</p>
+                        <p class="p2">￥1498.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售99738件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content23.jpg" /></dt>
+                    <dd>
+                        <p class="p1">【豪华套餐版】华为 荣耀 3X畅玩版(G750-T01)白色 移动3g手机 双卡双待</p>
+                        <p class="p2">￥1699.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售97145件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content24.jpg" /></dt>
+                    <dd>
+                        <p class="p1">联想 乐檬K3NOTE (k50-t5)16g珍珠白 移动联通4G手机 双卡双待</p>
+                        <p class="p2">￥899.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售96728件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content25.jpg" /></dt>
+                    <dd>
+                        <p class="p1">小米4 2GB内存版 白色 移动4G手机 过了这村就没有这店了</p>
+                        <p class="p2">￥1499.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售99738件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content26.jpg" /></dt>
+                    <dd>
+                        <p class="p1">Apple iPhone 4s 8gb 黑色 3g手机 过了这村就没有这店了</p>
+                        <p class="p2">￥1547.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售90202件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content27.jpg" /></dt>
+                    <dd>
+                        <p class="p1">荣耀6(H60-L01)3GB内存标准版 黑色 移动4G手机 送给最好的朋友</p>
+                        <p class="p2">￥1499.00<img src="../images/detail/tb.jpg" class="jd" /><span>已售67174件</span></p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col">
+                <dl>
+                    <dt><img src="../images/detail/content28.jpg" /></dt>
+                    <dd>
+                        <p class="p1">小米旗舰店 小米红米 note 双卡双待 智能手机 过了这村就没有这店了</p>
+                        <p class="p2">￥828.00<img src="../images/detail/worth.jpg" /></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content29.jpg" /></dt>
+                    <dd>
+                        <p class="p1">Farda/锋达通 w2014 电信移动联通翻盖智能 安卓3g双模双待手机</p>
+                        <p class="p2">￥169.00<img src="../images/detail/worth.jpg" /></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content31.jpg" /></dt>
+                    <dd>
+                        <p class="p1">Apple iphone4s 8GB金色 移动联通3g手机(自拍专用套装)</p>
+                        <p class="p2">￥1547.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售99738件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content32.jpg" /></dt>
+                    <dd>
+                        <p class="p1">Apple iphone6(A1503)16GB金色 移动联通4g手机(自拍专用套装)</p>
+                        <p class="p2">￥4947.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售99738件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content33.jpg" /></dt>
+                    <dd>
+                        <p class="p1">诺基亚(NOKIA)1050(RM-1120)黑色联通2g手机 最好的学生机 快来吧</p>
+                        <p class="p2">￥129.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售97145件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content34.jpg" /></dt>
+                    <dd>
+                        <p class="p1">小米红米 2A灰色 移动4G手机 双卡双待 送给老人 简单易操作</p>
+                        <p class="p2">￥499.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售96872件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content35.jpg" /></dt>
+                    <dd>
+                        <p class="p1">联想 乐檬K3(K30-T)16G 清新白 移动4G手机 双卡双待</p>
+                        <p class="p2">￥599.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售99738件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content36.jpg" /></dt>
+                    <dd>
+                        <p class="p1">Huawei/华为 荣耀畅玩4C 移动电信智能手机 4G安卓手机</p>
+                        <p class="p2">￥1099.00<img src="../images/detail/jindong.jpg" class="jd" /><span>已售90202件</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/detail/content37.jpg" /></dt>
+                    <dd>
+                        <p class="p1">优思US88 T移动直板大屏老年机大字大声 老人机 学生手机</p>
+                        <p class="p2">￥89.00<img src="../images/detail/tb.jpg" class="jd" /><span>已售66065件</span></p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="page">
+                <ul>
+                    <li><</li>
+                    <li class="click">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>></li>
+                    <span class="li5">...</span>
+                    <li>尾页</li>
+                </ul>
+                <div class="goTo">
+                    共501页&nbsp;去第
+                    <span>
+                        <input class="txt2" />
+                        <button class="btn3">GO</button>
+                    </span>
+                    页
+                </div>
+            </div>
+        </div>
+
+        <div class="foot">
+            <div class="link">
+                <div class="linkLogo"><img src="../images/foot1.jpg" /></div>
+                <ul>
+                    <li class="first">购物指南</li>
+                    <li><a href="#">帮5买品牌</a></li>
+                    <li><a href="#">帮5买帮购服务</a></li>
+                    <li><a href="#">购物流程</a></li>
+                    <li><a href="#">订单状态</a></li>
+                    <li><a href="#">帮钻说明</a></li>
+                    <li><a href="#">常见问题</a></li>
+                </ul>
+                <ul>
+                    <li class="first">支付方式</li>
+                    <li><a href="#">超级帮钻支付</a></li>
+                    <li><a href="#">支付平台</a></li>
+                    <li><a href="#">网银支付</a></li>
+                    <li><a href="#">快捷支付</a></li>
+                </ul>
+                <ul>
+                    <li class="first">售后服务</li>
+                    <li><a href="#">韩国城售后</a></li>
+                    <li><a href="#">帮购售后</a></li>
+                    <li><a href="#">取消订单</a></li>
+                    <li><a href="#">退款说明</a></li>
+                    <li><a href="#">投诉建议</a></li>
+                    <li><a href="#">客服电话流程</a></li>
+                </ul>
+                <ul>
+                    <li class="first">VIP服务</li>
+                    <li><a href="#">商品补贴</a></li>
+                    <li><a href="#">全网包邮</a></li>
+                    <li><a href="#">VIP商品</a></li>
+                    <li><a href="#">先赔闪退</a></li>
+                    <li><a href="#">购物返超级帮钻</a></li>
+                </ul>
+                <div class="erweima"><img src="../images/erweima.jpg" /></div>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li><a href="#">关于帮5买</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">合作商家</a></li>
+                    <li><a href="#">友情链接</a></li>
+                    <li><a href="#">加入我们</a></li>
+                    <li><a href="#">移动应用</a></li>
+                    <li><a href="#">热门</a></li>
+                    <li><a href="#">广告联盟</a></li>
+                    <li><a href="#" class="a4">使用条款</a></li>
+                </ul>
+                <p>Copyright &copy; 2011-2015 B5M.COM.All rights reserved.Powered by B5Msoft Co.,Ltd</p>
+                <p>增值电信业务经营许可证：沪B2-20130065号|中华人民共和国互联网药品信息服务资格证书(沪)-非经营性-2013-0034 沪卫中医网审【2015】10032号 沪ICP备11034776号-3|食品流通许可证:sp3001151410301755</p>
+                <p><img src="../images/police.jpg" /></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

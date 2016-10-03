@@ -6,6 +6,9 @@ $(function(){
         var psd = $.cookie.getAll($("#txt").val()).psd;
         if(psd == $("#txt2").val()){
             location.href = "../index.html";
+        }else{
+            $("#txt").val("用户名或密码错误");
+            $("#txt2").val("");
         }
     })
 })

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/product.css" />
     <link rel="stylesheet" href="../css/jquery-ui.css" />
     <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/cookie.js"></script>
     <script src="../js/jquery-ui.js"></script>
     <script src="../js/product.js"></script>
 </head>
@@ -57,9 +58,14 @@
             </ul>
             <span>返利说明 <img src="../images/product/p.jpg" /></span>
         </div>
-        <p class="title">所有分类<span> > 移动4g网络智能手机 5寸超薄安卓四核 LEPHONE/立丰 T708青春版</span></p>
+        <p class="title">所有分类<span> > 移动4g网络智能手机 5寸超薄安卓四核 LEPHONE/立丰 T708青春版</span><span class="endtime" value="3354365003";></span></p>
         <div class="phone">
-            <div class="pic"><img src="../images/product/phone1.jpg" /></div>
+            <div class="pic" id="pic">
+                <div class="square" id="square"></div>
+                <div class="bigger" id="bigger">
+                    <img src="../images/product/phone1.jpg" />
+                </div>
+            </div>
             <div class="small_pic">
                 <div class="btn_left"><</div>
                 <div class="sPic"><img src="../images/product/small_phone.jpg" /></div>
@@ -81,7 +87,7 @@
                 <li><img src="../images/product/phoneUl5.jpg" /><span>先赔闪退</span></li>
             </ul>
             <div class="phone_mid">
-                <p class="p1">移动4G网络智能手机 5寸超薄安卓四核 LEPHONE/立丰 T708青春版</p>
+                <p class="p1" id="lephone">移动4G网络智能手机 5寸超薄安卓四核 LEPHONE/立丰 T708青春版</p>
                 <div class="price">
                     <div class="price1">价格</div>
                     <div class="price2">
@@ -93,11 +99,11 @@
                 <p class="p4"><span class="span5">减</span><span class="span6">VIP用户每件至少补贴1元</span></p>
                 <p class="p4"><span class="span5">免</span><span class="span6">全场商品限时包邮</span></p>
                 <p class="p5">销量:<span class="span7">1245</span><span>件</span></p>
-                <p class="p6">机身颜色<span class="color">白色</span><span class="color2">黑色</span></p>
+                <p class="p6" id="color">机身颜色<span class="color">白色</span><span class="color2">黑色</span></p>
                 <p class="p7">套餐类型<span class="type">官方标配</span></p>
             </div>
             <div class="phone_mid2">
-                <p>数量<span class="less">-</span><input class="num" value="1" /><span class="more">+</span> <span class="span8">件</span>(库存100件)</p>
+                <p>数量<span class="less special_num">-</span><input class="num" value="1" /><span class="more">+</span> <span class="span8">件</span>(库存100件)</p>
                 <div class="buy">立即抢购</div>
             </div>
             <div class="sideban">
@@ -198,9 +204,9 @@
                 </div>
             </div>
             <div class="photo">
-                <div class="infomation"></div>
-                <div class="back"></div>
-                <div class="safeguard"></div>
+                <div class="infomation lou"></div>
+                <div class="back lou"></div>
+                <div class="safeguard lou"></div>
             </div>
         </div>
         <div class="hide">

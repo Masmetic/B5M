@@ -20,6 +20,17 @@ ul li{
     height: auto;
     margin: 0 auto;
 }
+.biu{
+    width: 740px;
+    height: 445px;
+    position: absolute;
+    z-index: 10000;
+    background: url("../images/biu.jpg") no-repeat;
+    left: 200px;
+    top: 100px;
+    opacity: 0;
+    filter:alpha(opacity = 0);
+}
 .roll{
     width: 60px;
     height: 323px;

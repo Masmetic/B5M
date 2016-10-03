@@ -112,6 +112,7 @@ $(function() {
         "Java",
         "JavaScript",
         "Lisp",
+        "lephone",
         "Perl",
         "PHP",
         "Python",
@@ -122,6 +123,22 @@ $(function() {
     $( "#tags" ).autocomplete({
         source: availableTags
     });
+    $(".biu").animate({
+        "opacity" : 1
+    },2000)
+    $(".biu").click(function(){
+        $(this).stop().hide("slow");
+    })
+    $("dl").on("mouseover",function(){
+        $(this).stop().animate({
+            "opacity" : 0.5
+        },500)
+    })
+    $("dl").on("mouseout",function(){
+        $(this).stop().animate({
+            "opacity" : 1
+        },500)
+    })
 });
 $(window).scroll(function(){
     var $t = $(this).scrollTop();

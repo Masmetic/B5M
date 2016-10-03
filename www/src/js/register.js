@@ -55,12 +55,16 @@ $(function(){
             && $(".txt3").val() != ""
             && $(".txt4").val() != "false"
             && $(".txt4").val() != ""){
-            console.log($.cookie.getAll($(".txt").val()));
-            //if($.cookie.getAll($(".txt").val()).psd != undefined){
-            //    alert(0)
-            //}else {
-            //    $.cookie.setAll($(".txt").val(),{"psd":$(".txt3").val()});
-            //}
+            //console.log($.cookie.getAll($(".txt").val()));
+            if($.cookie.getAll($(".txt").val()).psd != undefined){
+                alert("用户名已存在");
+            }else {
+                alert("注册成功");
+                $.cookie.setAll($(".txt").val(),{"psd":$(".txt3").val()});
+            }
         }
+    })
+    $(".btn3").click(function(){
+        location.href = "login.html";
     })
 })

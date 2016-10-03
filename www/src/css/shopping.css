@@ -1,0 +1,275 @@
+.b5m{
+    width: 1263px;
+    height: 90px;
+    position: relative;
+}
+.b5m1{
+    width: 371px;
+    height: 90px;
+    margin-left: 41px;
+    background: url("../images/shopping/bm5_1.jpg") no-repeat;
+}
+.b5m ul{
+    width: 424px;
+    height: 31px;
+    position: absolute;
+    top: 42px;
+    right: 22px;
+}
+.b5m ul li{
+    float: left;
+    padding: 0 10px;
+    height: 31px;
+    line-height: 31px;
+    color: #999;;
+}
+.b5m ul li img{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.mycar{
+    width: 1182px;
+    height: 83px;
+    margin-left: 41px;
+    border-top: 2px solid #e4e4e4;
+    border-bottom: 2px solid #e4e4e4;
+    position: relative;
+}
+.p1{
+    font-size: 18px;
+    color: #333;
+    margin-top: 25px;
+}
+.hint{
+    width: 313px;
+    height: 24px;
+    border: 1px solid #ffde86;
+    position: absolute;
+    top: 23px;
+    left: 111px;
+    text-align: center;
+    line-height: 24px;
+    color: #333;
+}
+.hint img{
+    vertical-align: middle;
+}
+.hint span{
+    color: #ff7a4d;
+}
+.mycar dl{
+    width: 419px;
+    height: 41px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.mycar dt{
+    width: 419px;
+    height: 24px;
+}
+.mycar dd{
+    line-height: 18px;
+}
+.mycar dd span{
+    color: #666;
+}
+.mycar dd .span2{
+    color: #ff5e00;
+    margin-left: 43px;
+    margin-right: 74px;
+}
+.mycar dd .span3{
+    margin-right: 65px;
+}
+
+.content{
+    width: 1182px;
+    height: auto;
+    margin-left: 41px;
+    margin-bottom: 20px;
+}
+.top{
+    width: 1182px;
+    height: 39px;
+}
+.top span{
+    display: inline-block;
+    line-height: 39px;
+    color: #333;
+}
+.top input{
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 14px;
+}
+.Pname{
+    margin-left: 140px;
+}
+.style{
+    margin-left: 195px;
+}
+.price{
+    margin-left: 105px;
+}
+.num{
+    margin-left: 86px;
+}
+.money{
+    margin-left: 100px;
+}
+.do{
+    margin-left: 108px;
+}
+.notice{
+    width: 1178px;
+    height: 38px;
+    border: 1px solid #fddfbb;
+    color: #fc8787;
+    background-color: #feecec;
+    height: 38px;
+    line-height: 38px;
+}
+.notice img{
+    vertical-align: middle;
+}
+.hotsale{
+    margin-left: 11px;
+    margin-right: 13px;
+}
+.notice span{
+    display: inline-block;
+    width: 60px;
+    height: 26px;
+    border: 1px solid #fe9999;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 26px;
+    background-color: #ff9f9f;
+    margin-left: 20px;
+    color: #e24949;
+    cursor: pointer;
+}
+.goods{
+    width: 1158px;
+    height: auto;
+    background-color: #fffcef;
+    border: 1px solid #fff3cd;
+    margin-top: 20px;
+    padding: 10px;
+}
+.sum{
+    width: 1170px;
+    height: 60px;
+    background-color: #f0f0f0;
+    margin-top: 20px;
+    line-height: 60px;
+    padding-left: 10px;
+    color: #333;
+}
+.sum input{
+    vertical-align: middle;
+}
+.del{
+    margin-left: 30px;
+    margin-right: 630px;
+    cursor: pointer;
+}
+.settle{
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    background-color: #ff7a4d;
+    border-radius: 3px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.allNum, .allMoney{
+    color: #e81818;
+    font-weight: bold;
+}
+.allMoney{
+    font-size: 16px;
+}
+.store{
+    margin-bottom: 10px;
+}
+.store span{
+    margin-left: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.store input{
+    vertical-align: middle;
+}
+.info{
+    padding: 20px 30px;
+    background-color: #fff;
+    height: 50px;
+    border-bottom: 1px dashed #dadada;
+}
+.info input{
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.info img{
+    border: 1px solid #e4e4e4;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.name{
+    display: inline-block;
+    width:215px;
+    color: #333;
+    margin-right: 105px;
+}
+.types{
+    display: inline-block;
+    color: #999;
+    margin-right: 85px;
+}
+.pri{
+    font-weight: bold;
+    color: #333;
+    margin-right: 70px;
+}
+.less, .more{
+    display: inline-block;
+    width: 22px;
+    height: 34px;
+    border: 1px solid #d8d8d8;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+}
+.info .num2{
+    width: 46px;
+    height: 34px;
+    border: none;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    text-align: center;
+    margin-right: 0;
+    margin-top: -2px;
+}
+.more{
+    margin-right: 50px;
+}
+.all{
+    color: #ffd595;
+    margin-right: 90px;
+    display: inline-block;
+    width: 70px;
+}
+.delete{
+    color: #999999;
+    cursor: pointer;
+}
+.special_num{
+    background-color: #eee;
+}
