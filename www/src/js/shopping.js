@@ -51,6 +51,14 @@ $(function(){
         $(".all").html(parseFloat($(".pri").html() * $(".num2").val()).toFixed(2));
         $(".allNum").html($(".num2").val());
         $(".allMoney").html($(".all").html());
+        $.cookie.setAll(id,{
+            "pName" : pName,
+            "imgSrc" : imgSrc,
+            "Pcolor" : Pcolor,
+            "Pstyle" : Pstyle,
+            "price" : price,
+            "Pnum" : $(".num2").val()
+        })
     });
     if($(".num2").val() == 1){
         $(".less").addClass("special_num");
@@ -75,6 +83,14 @@ $(function(){
         $(".all").html(parseFloat($(".pri").html() * $(".num2").val()).toFixed(2));
         $(".allNum").html($(".num2").val());
         $(".allMoney").html($(".all").html());
+        $.cookie.setAll(id,{
+            "pName" : pName,
+            "imgSrc" : imgSrc,
+            "Pcolor" : Pcolor,
+            "Pstyle" : Pstyle,
+            "price" : price,
+            "Pnum" : $(".num2").val()
+        })
     })
     $(".more").click(function(){
         $(".less").removeClass("special_num");
@@ -94,6 +110,14 @@ $(function(){
         $(".all").html(parseFloat($(".pri").html() * $(".num2").val()).toFixed(2));
         $(".allNum").html($(".num2").val());
         $(".allMoney").html($(".all").html());
+        $.cookie.setAll(id,{
+            "pName" : pName,
+            "imgSrc" : imgSrc,
+            "Pcolor" : Pcolor,
+            "Pstyle" : Pstyle,
+            "price" : price,
+            "Pnum" : $(".num2").val()
+        })
     })
     //修改总商品数 和 总价
     $(".allNum").html($(".num2").val());

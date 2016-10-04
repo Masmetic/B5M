@@ -1,0 +1,92 @@
+.menu{
+    width: 1263px;
+    height: 52px;
+    border-bottom: 2px solid #ff7800;
+    position: relative;
+}
+.allstyle{
+    width: 170px;
+    height: 40px;
+    background-color: #ff7800;
+    position: absolute;
+    bottom: 0;
+    left: 42px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+}
+.nav{
+    width: 672px;
+    height: 52px;
+    position: absolute;
+    left: 227px;
+}
+.nav li{
+    float: left;
+    line-height: 68px;
+}
+.nav li a{
+    padding:0 25px;
+    color: #333;
+    font-size: 16px;
+}
+.nav li a:hover{
+    color: #f18100;
+}
+.nav li .firstPage{
+    color: #f18100;
+}
+.li1{
+    position: absolute;
+    left: 155px;
+    top: -10px;
+}
+.li2{
+    position: absolute;
+    left: 268px;
+    top: -10px;
+}
+.li3{
+    position: absolute;
+    left: 478px;
+    top: -10px;
+}
+.navLogo{
+    width: 225px;
+    height: 52px;
+    position: absolute;
+    right: 36px;
+    background: url("../images/nav_logo.jpg");
+}
+
+.content{
+    width: 1263px;
+    height: 474px;
+    overflow: hidden;
+}
+.con{
+    width: 438px;
+    height: 262px;
+    margin-left: 403px;
+    margin-top: 101px;
+    background-color: greenyellow;
+    padding: 0 15px;
+    padding-top: 25px;
+}
+.con .title{
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 50px;
+}
+.con p{
+    margin-bottom: 15px;
+    color: #666;
+}
+.con input{
+    width: 161px;
+    height: 28px;
+    border:1px solid #ececec;
+    margin-left: 20px;
+    margin-right: ;
+}
