@@ -115,13 +115,13 @@
     color: #fff;
 }
 .introduce{
-    width: 1206px;
-    height: 180px;
+    width: 1204px;
+    height: auto;
     border: 1px solid #dddddd;
     margin-left: 30px;
 }
 .introduce ul{
-    width: 1171px;
+    width: 1204px;
     height: 35px;
     border-bottom: 1px dashed #dddddd;
 }
@@ -143,6 +143,12 @@
 .introduce ul span{
     color: #666;
 }
+#hide1{
+    display: none;
+}
+#hide2{
+    display: none;
+}
 .span2{
     margin-top: 5px;
     width: 32px;
@@ -159,9 +165,6 @@
 .span3{
     cursor: pointer;
 }
-.introduce .last{
-    border-bottom:none;
-}
 .span4{
     margin-top: 5px;
     width: 32px;
@@ -177,7 +180,7 @@
     margin-left: 300px;
 }
 .other{
-    width:1206px;
+    width:1204px;
     height: 30px;
     line-height: 30px;
     text-align: center;
@@ -187,6 +190,13 @@
     color: #666;
     cursor: pointer;
     background-color: #f9f9f9;
+}
+#up{
+    display: none;
+    margin-left: 0;
+}
+.weight, .color{
+    display: none;
 }
 .other span{
     color: #999;

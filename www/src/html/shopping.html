@@ -46,9 +46,9 @@
                 <dd><span class="span2">我的购物车</span><span class="span3">确认订单信息</span><span>成功提交订单</span></dd>
             </dl>
         </div>
-        <div class="content">
+        <div class="content" id="content">
             <div class="top">
-                <span><input type="checkbox" checked />全选</span>
+                <span><input type="checkbox" checked="checked" id="allCheck" />全选</span>
                 <span class="Pname">商品名称</span>
                 <span class="style">商品规格</span>
                 <span class="price">单价(元)</span>
@@ -57,11 +57,34 @@
                 <span class="do">操作</span>
             </div>
             <div class="notice">
-                <img src="../images/shopping/hotsale.jpg" class="hotsale" />为您推荐的最热销商品<span>展开<img src="../images/shopping/xia.jpg" /></span>
+                <img src="../images/shopping/hotsale.jpg" class="hotsale" />为您推荐的最热销商品<span>展开</span>
             </div>
-            <div class="goods"></div>
+            <div class="exp">
+                <dl>
+                    <dt><img src="../images/shopping/exp1.jpg" /></dt>
+                    <dd>
+                        <p class="p2">韩国 It's skin伊思红参蜗牛面膜5片/盒</p>
+                        <p class="p3">￥132 <s>￥175</s></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/shopping/exp2.jpg" /></dt>
+                    <dd>
+                        <p class="p2">韩国Holika Holika 蜂蜜睡眠面膜90ml/瓶</p>
+                        <p class="p3">￥47 <s>￥110</s></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/shopping/exp3.jpg" /></dt>
+                    <dd>
+                        <p class="p2">韩国 suwasool雪花秀 焕颜面膜</p>
+                        <p class="p3">￥319 <s>￥360</s></p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="goods" id="lephone"></div>
             <div class="sum">
-                <input type="checkbox" /> 全选
+                <input type="checkbox" checked="checked" id="allCheck2" /> 全选
                 <span class="del">删除</span>
                 已选 <span class="allNum">0</span> 件商品&nbsp;
                 商品总额: <span class="allMoney">0</span>

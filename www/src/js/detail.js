@@ -27,4 +27,52 @@ $(function(){
             },500)
         })
     })
+    //点击跳转商品详情
+    $("#lephone").click(function(){
+        location.href = "../html/product.html";
+    })
+    //点击展开
+    $("#show1").click(function(){
+        $("#hide1").toggle();
+    })
+    $("#show2").click(function(){
+        $("#hide2").toggle();
+    })
+    $(".other").click(function(){
+        $(".other").hide();
+        $(".weight, .color, #up").show();
+    })
+    $("#up").click(function(){
+        $(".other").show();
+        $(".weight, .color, #up").hide();
+    })
+    //搜索
+    var availableTags = [
+        "ActionScript",
+        "AppleScript",
+        "Asp",
+        "BASIC",
+        "C",
+        "C++",
+        "Clojure",
+        "COBOL",
+        "ColdFusion",
+        "Erlang",
+        "Fortran",
+        "Groovy",
+        "Haskell",
+        "Java",
+        "JavaScript",
+        "Lisp",
+        "lephone",
+        "Perl",
+        "PHP",
+        "Python",
+        "Ruby",
+        "Scala",
+        "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+        source: availableTags
+    });
 })

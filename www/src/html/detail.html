@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>商品列表</title>
+    <link rel="stylesheet" href="../css/jquery-ui.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/detail.css" />
     <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/jquery-ui.js"></script>
     <script src="../js/detail.js"></script>
 </head>
 <body>
@@ -101,7 +103,13 @@
                 <li><a href="#">国美在线</a></li>
                 <li><a href="#">亚马逊</a></li>
                 <span class="span2">多选</span>
-                <span class="span3">展开<img src="../images/detail/down.jpg" /></span>
+                <span class="span3" id="show1">展开<img src="../images/detail/down.jpg" /></span>
+            </ul>
+            <ul id="hide1">
+                <li class="li4">商品来源:</li>
+                <li><a href="#">天狗商城</a></li>
+                <li><a href="#">当当网</a></li>
+                <li><a href="#">书旗网</a></li>
             </ul>
             <ul>
                 <li class="li4">商品分类:</li>
@@ -134,13 +142,35 @@
                 <li><a href="#">2000万</a></li>
                 <li><a href="#">130万</a></li>
                 <span class="span2">多选</span>
-                <span class="span3">展开<img src="../images/detail/down.jpg" /></span>
+                <span class="span3" id="show2">展开<img src="../images/detail/down.jpg" /></span>
             </ul>
-            <ul class="last">
+            <ul id="hide2">
+                <li class="li4">后置摄像头:</li>
+                <li><a href="#">100万</a></li>
+                <li><a href="#">140万</a></li>
+                <li><a href="#">990万</a></li>
+            </ul>
+            <ul>
                 <li class="li4">款式:</li>
                 <li><a href="#">直板</a></li>
                 <li><a href="#">翻盖</a></li>
             </ul>
+            <ul class="weight">
+                <li class="li4">重量:</li>
+                <li><a href="#">2kg</a></li>
+                <li><a href="#">1kg</a></li>
+                <li><a href="#">0.5kg</a></li>
+                <li><a href="#">210g</a></li>
+            </ul>
+            <ul class="color">
+                <li class="li4">颜色</li>
+                <li><a href="#">奶白</a></li>
+                <li><a href="#">纯黑</a></li>
+                <li><a href="#">白加黑</a></li>
+                <li><a href="#">灰色</a></li>
+                <li><a href="#">咖啡色</a></li>
+            </ul>
+            <div class="other" id="up">收起</div>
         </div>
         <div class="other">其他属性<span>(核心数,触摸屏类型等)</span></div>
         <div class="sort">
@@ -152,7 +182,7 @@
         </div>
         <div class="content">
             <div class="col">
-                <dl>
+                <dl id="lephone">
                     <dt><img src="../images/detail/content1.jpg" /></dt>
                     <dd>
                         <p class="p1">移动4G网络智能手机 5寸超薄安卓四核 LEPHONE/立丰 T708青春版</p>

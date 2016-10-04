@@ -3,12 +3,14 @@
  */
 $(function(){
     //把数据从cookie中添加至购物车
-    var pName = $.cookie.getAll("lephone").pName;
-    var imgSrc = $.cookie.getAll("lephone").imgSrc;
-    var Pcolor = $.cookie.getAll("lephone").Pcolor;
-    var Pstyle = $.cookie.getAll("lephone").Pstyle;
-    var price = parseFloat($.cookie.getAll("lephone").price).toFixed(2);
-    var Pnum = parseInt($.cookie.getAll("lephone").Pnum);
+    var id = $(".goods").attr("id");
+    //console.log(id);
+    var pName = $.cookie.getAll(id).pName;
+    var imgSrc = $.cookie.getAll(id).imgSrc;
+    var Pcolor = $.cookie.getAll(id).Pcolor;
+    var Pstyle = $.cookie.getAll(id).Pstyle;
+    var price = parseFloat($.cookie.getAll(id).price).toFixed(2);
+    var Pnum = parseInt($.cookie.getAll(id).Pnum);
     //console.log(price);
     if(pName != undefined
         &&imgSrc != undefined
@@ -17,11 +19,11 @@ $(function(){
         &&price != undefined
         &&Pnum != undefined){
         $(".goods").append("<p class='store'></p>");
-        $(".store").append("<input type='checkbox' />");
+        $(".store").append("<input type='checkbox' checked />");
         $(".store").append("<span></span>");
         $(".store span").html(pName);
         $(".goods").append("<div class='info'></div>");
-        $(".info").append("<input type='checkbox' />");
+        $(".info").append("<input type='checkbox' checked id='things' />");
         $(".info").append("<img />");
         $(".info img").attr({
             "src" : imgSrc
@@ -38,7 +40,6 @@ $(function(){
         $(".num2").val(Pnum);
         $(".info").append("<span class='all'></span>");
         $(".all").html(parseFloat($(".pri").html() * $(".num2").val()).toFixed(2));
-        $("act").html()
         //console.log($(".pri").html() * $(".num2").val())
         $(".info").append("<span class='delete'>删除</span>");
     }
@@ -97,4 +98,38 @@ $(function(){
     //修改总商品数 和 总价
     $(".allNum").html($(".num2").val());
     $(".allMoney").html($(".all").html());
+    //删除商品
+    $(".delete, .del").click(function(){
+        $.cookie.unsetAll("lephone");
+        window.location.reload();
+    })
+    //全选
+    $("#allCheck, #allCheck2").bind("change",function(){
+        if($(this).is(":checked")){
+            $("#content input:checkbox").attr("checked",true);
+        }else{
+            $("#content input:checkbox").attr("checked",false);
+        }
+    })
+    //展开
+    $(".notice span").click(function(){
+        if($(this).html() == "展开"){
+            $(".exp").show();
+            $(this).html("收起")
+        }else{
+            $(".exp").hide();
+            $(this).html("展开");
+        }
+    })
+    //普通商品特效
+    $("dl").on("mouseover",function(){
+        $(this).stop().animate({
+            "opacity" : 0.5
+        },500)
+    })
+    $("dl").on("mouseout",function(){
+        $(this).stop().animate({
+            "opacity" : 1
+        },500)
+    })
 })

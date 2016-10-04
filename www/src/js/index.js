@@ -95,6 +95,7 @@ $(function() {
     $(".hide").on("mouseenter mouseleave",function(){
         $(this).toggle();
     })
+    //sousuo
     var availableTags = [
         "ActionScript",
         "AppleScript",
@@ -123,12 +124,14 @@ $(function() {
     $( "#tags" ).autocomplete({
         source: availableTags
     });
+    //弹窗
     $(".biu").animate({
         "opacity" : 1
     },2000)
     $(".biu").click(function(){
-        $(this).stop().hide("slow");
+        $(this).stop().hide();
     })
+    //普通商品特效
     $("dl").on("mouseover",function(){
         $(this).stop().animate({
             "opacity" : 0.5
@@ -138,7 +141,26 @@ $(function() {
         $(this).stop().animate({
             "opacity" : 1
         },500)
-    }) 
+    })
+    //侧边栏
+    $(".app,.er").on("mouseover",function(){
+        $(".er").show().stop().animate({
+            "left" : -110,
+            "opacity" : 1
+        },800)
+    })
+    $(".app,.er").on("mouseout",function(){
+        $(".er").stop().hide();
+    })
+    $(".app2,.er2").on("mouseover",function(){
+        $(".er2").stop().show().stop().animate({
+            "left" : -110,
+            "opacity" : 1
+        },800)
+    })
+    $(".app2,.er2").on("mouseout",function(){
+        $(".er2").stop().hide();
+    })
 });
 $(window).scroll(function(){
     var $t = $(this).scrollTop();

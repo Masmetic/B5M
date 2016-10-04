@@ -47,6 +47,28 @@ ul li{
     border-bottom: 1px solid #efefef;
     cursor: pointer;
 }
+.er{
+    width: 113px;
+    height: 148px;
+    background: url("../images/guanzhu.bmp") no-repeat;
+    position: absolute;
+    left: -180px;
+    top: 80px;
+    display: none;
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+}
+.er2{
+    width: 113px;
+    height: 150px;
+    background: url("../images/app.bmp") no-repeat;
+    position: absolute;
+    left: -180px;
+    top: 160px;
+    display: none;
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+}
 .head{
     width: 1223px;
     height: 28px;
@@ -456,7 +478,6 @@ ul li{
 .banner2{
     width: 210px;
     height: 183px;
-    background-color: greenyellow;
     border-right: 1px solid #efefef;
     border-bottom: 1px solid #efefef;
     position: relative;
@@ -975,7 +996,6 @@ ul li{
 .banner3{
     width: 800px;
     height: 484px;
-    background-color: blue;
     position: absolute;
     left: 380px;
     top: 44px;

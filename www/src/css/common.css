@@ -152,6 +152,9 @@ ul li{
 .link ul li a{
     color: #666;
 }
+.link ul li a:hover{
+    color: red;
+}
 .link ul .first{
     font-size: 16px;
 }
@@ -180,6 +183,9 @@ ul li{
     padding: 0 12px;
     color: #666;
     border-right: 1px solid #333;
+}
+.bottom ul li a:hover{
+    color: red;
 }
 .bottom .a4{
     border: none;

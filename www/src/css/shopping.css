@@ -151,6 +151,44 @@
     color: #e24949;
     cursor: pointer;
 }
+.exp{
+    width: 1160px;
+    height: 243px;
+    border: 1px solid #ccc;
+    border-top: none;
+    margin-left: 9px;
+    box-shadow: 10px 10px 5px #999;
+    display: none;
+}
+.exp dl{
+    float: left;
+    width: 240px;
+    height: 105px;
+    cursor: pointer;
+}
+.exp dl dt{
+    width: 96px;
+    height: 105px;
+    float: left;
+}
+.exp dl dd{
+    width: 135px;
+    height: 105px;
+    float: left;
+    margin-left: 5px;
+}
+.p2{
+    margin-top: 15px;
+    line-height: 20px;
+    color: #333;
+}
+.p3{
+    color: #ee747a;
+    line-height: 30px;
+}
+.p3 s{
+    color: #ccc;
+}
 .goods{
     width: 1158px;
     height: auto;

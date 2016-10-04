@@ -171,4 +171,15 @@ $(window).scroll(function(){
             $("html,body").scrollTop($top);
         })
     })
+    //普通商品特效
+    $("dl").on("mouseover",function(){
+        $(this).stop().animate({
+            "opacity" : 0.5
+        },500)
+    })
+    $("dl").on("mouseout",function(){
+        $(this).stop().animate({
+            "opacity" : 1
+        },500)
+    })
 })
