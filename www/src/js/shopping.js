@@ -15,12 +15,12 @@ $(function(){
     var pri2;
     var pri3;
     //console.log(price);
-    if(pName != undefined
-        &&imgSrc != undefined
-        &&Pcolor != undefined
-        &&Pstyle != undefined
-        &&price != undefined
-        &&Pnum != undefined){
+    if(pName !== undefined
+        && imgSrc !== undefined
+        && Pcolor !== undefined
+        && Pstyle !== undefined
+        && price !== undefined
+        && Pnum !== undefined){
         $(".goods").append("<p class='store'></p>");
         $(".store").append("<input type='checkbox' />");
         $(".store").append("<span></span>");
@@ -43,7 +43,7 @@ $(function(){
         $(".num2").val(Pnum);
         $(".info").append("<span class='all'></span>");
         $(".all").html(parseFloat($(".pri").html() * $(".num2").val()).toFixed(2));
-        //console.log($(".pri").html() * $(".num2").val())
+        //console.log($(".pri").html() * $(".num2").val());
         $(".info").append("<span class='delete'>删除</span>");
     }
     //商品数量改变
@@ -51,22 +51,7 @@ $(function(){
         if($(".num2").val() < 1 || $(".num2").val() > 100){
             $(".num2").val("1");
         }
-        $(".all").html(parseFloat($(".pri").html() * $(".num2").val()).toFixed(2));
-        if($("#things").is(":checked")){
-            $(".allNum").html($(".num2").val());
-            $(".allMoney").html($(".all").html());
-        }else{
-            $(".allNum").html("0");
-            $(".allMoney").html("0");
-        }
-        $.cookie.setAll(id,{
-            "pName" : pName,
-            "imgSrc" : imgSrc,
-            "Pcolor" : Pcolor,
-            "Pstyle" : Pstyle,
-            "price" : price,
-            "Pnum" : $(".num2").val()
-        })
+        cal();
     });
     if($(".num2").val() == 1){
         $(".less").addClass("special_num");
@@ -88,22 +73,7 @@ $(function(){
             $(this).removeClass("special_num");
             $(".num2").val(much - 1);
         }
-        $(".all").html(parseFloat($(".pri").html() * $(".num2").val()).toFixed(2));
-        if($("#things").is(":checked")){
-            $(".allNum").html($(".num2").val());
-            $(".allMoney").html($(".all").html());
-        }else{
-            $(".allNum").html("0");
-            $(".allMoney").html("0");
-        }
-        $.cookie.setAll(id,{
-            "pName" : pName,
-            "imgSrc" : imgSrc,
-            "Pcolor" : Pcolor,
-            "Pstyle" : Pstyle,
-            "price" : price,
-            "Pnum" : $(".num2").val()
-        })
+        cal();
     });
     $(".more").click(function(){
         $(".less").removeClass("special_num");
@@ -112,30 +82,15 @@ $(function(){
         if(much == 100){
             much = 100;
             $(this).addClass("special_num");
-            $(".num2").val(100)
+            $(".num2").val(100);
         } else if(much == 99){
             $(this).addClass("special_num");
-            $(".num2").val(much + 1)
+            $(".num2").val(much + 1);
         }else{
             $(this).removeClass("special_num");
             $(".num2").val(much + 1);
         }
-        if($("#things").is(":checked")){
-            $(".allNum").html($(".num2").val());
-            $(".allMoney").html($(".all").html());
-        }else{
-            $(".allNum").html("0");
-            $(".allMoney").html("0");
-        }
-        $(".all").html(parseFloat($(".pri").html() * $(".num2").val()).toFixed(2));
-        $.cookie.setAll(id,{
-            "pName" : pName,
-            "imgSrc" : imgSrc,
-            "Pcolor" : Pcolor,
-            "Pstyle" : Pstyle,
-            "price" : price,
-            "Pnum" : $(".num2").val()
-        })
+        cal();
     });
     //修改总商品数 和 总价
     $("#things, .store input, #allCheck, #allCheck2").on("change",function(){
@@ -171,21 +126,40 @@ $(function(){
     $(".notice span").click(function(){
         if($(this).html() == "展开"){
             $(".exp").show();
-            $(this).html("收起")
+            $(this).html("收起");
         }else{
             $(".exp").hide();
             $(this).html("展开");
         }
-    })
+    });
     //普通商品特效
     $("dl").on("mouseover",function(){
         $(this).stop().animate({
             "opacity" : 0.5
-        },500)
+        },500);
     });
     $("dl").on("mouseout",function(){
         $(this).stop().animate({
             "opacity" : 1
-        },500)
+        },500);
     });
+    //提出来
+    function cal(){
+        $(".all").html(parseFloat($(".pri").html() * $(".num2").val()).toFixed(2));
+        if($("#things").is(":checked")){
+            $(".allNum").html($(".num2").val());
+            $(".allMoney").html($(".all").html());
+        }else{
+            $(".allNum").html("0");
+            $(".allMoney").html("0");
+        }
+        $.cookie.setAll(id,{
+            "pName" : pName,
+            "imgSrc" : imgSrc,
+            "Pcolor" : Pcolor,
+            "Pstyle" : Pstyle,
+            "price" : price,
+            "Pnum" : $(".num2").val()
+        });
+    }
 });

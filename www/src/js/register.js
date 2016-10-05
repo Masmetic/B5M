@@ -7,7 +7,7 @@ $(function(){
         function get(){
             num = parseInt(Math.random() * 74 + 48);
             if(num >= 58 && num <= 64 || num >= 91 && num <= 96){
-                get()
+                get();
             }
         }
         for(i = 0;i < 4;i++){
@@ -15,7 +15,7 @@ $(function(){
             str += String.fromCharCode(num);
         }
         $(".btn").val(str);
-    })
+    });
 
     $(".txt").blur(function(){
         var phoneNumber = parseInt($(".txt").val());
@@ -23,48 +23,48 @@ $(function(){
             $(".txt").val("false");
             return false;
         }
-    })
+    });
     $(".txt2").blur(function(){
         var identify = $(".txt2").val();
         if(identify != $(".btn").val()){
             $(".txt2").val("false");
             return false;
         }
-    })
+    });
     $(".txt3").blur(function(){
         var psd = $(".txt3").val();
         if(!/^[a-z0-9_-]{6,18}$/.test(psd)){
             $(".txt3").val("false");
             return false;
         }
-    })
+    });
     $(".txt4").blur(function(){
         var psd2 = $(".txt4").val();
         if(psd2 != $(".txt3").val()){
             $(".txt4").val("false");
             return false;
         }
-    })
+    });
     $(".btn2").click(function(){
         if($(".check").is(":checked")
             && $(".txt").val() != "false"
-            && $(".txt").val() != ""
+            && $(".txt").val() !== ""
             && $(".txt2").val() != "false"
-            && $(".txt2").val() != ""
+            && $(".txt2").val() !== ""
             && $(".txt3").val() != "false"
-            && $(".txt3").val() != ""
+            && $(".txt3").val() !== ""
             && $(".txt4").val() != "false"
-            && $(".txt4").val() != ""){
+            && $(".txt4").val() !== ""){
             //console.log($.cookie.getAll($(".txt").val()));
-            if($.cookie.getAll($(".txt").val()).psd != undefined){
+            if($.cookie.getAll($(".txt").val()).psd !== undefined){
                 alert("用户名已存在");
             }else {
                 alert("注册成功");
                 $.cookie.setAll($(".txt").val(),{"psd":$(".txt3").val()});
             }
         }
-    })
+    });
     $(".btn3").click(function(){
         location.href = "login.html";
-    })
-})
+    });
+});

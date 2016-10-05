@@ -49,15 +49,15 @@ $(function(){
     $(".pic").on("mouseover mouseout",function(event){
         $("#square").toggle();
         $("#bigger").toggle();
-    })
+    });
     $(".pic").on("mouseover",function(){
         $(".pic").on("mousemove",function(event){
             var x = event.pageX - $(".pic").offset().left - $("#square").width()/2;
             var y = event.pageY - $(".pic").offset().top - $("#square").height()/2;
             if(x < 0){
-                x = 0
+                x = 0;
             } else if(x > $(".pic").width() - $("#square").width()){
-                x = $(".pic").width() - $("#square").width()
+                x = $(".pic").width() - $("#square").width();
             }
             if(y < 0){
                 y = 0;
@@ -67,25 +67,25 @@ $(function(){
             $("#square").css({
                 "left" : x,
                 "top" : y
-            })
+            });
             $("#bigger img").css({
                 "left" : -4 * x,
                 "top" : -4 * y
-            })
-        })
-    })
+            });
+        });
+    });
     //商品样式改变
     $("#color span").each(function(){
         $(this).on("click",function(){
             $(this).addClass("special_color").siblings().removeClass("special_color");
-        })
-    })
+        });
+    });
     //商品数量改变
     $(".num").on("blur",function(){
         if($(".num").val() < 1 || $(".num").val() > 100){
             $(".num").val("1");
         }
-    })
+    });
     var much;
     $(".less").click(function(){
         $(".more").removeClass("special_num");
@@ -101,7 +101,7 @@ $(function(){
             $(this).removeClass("special_num");
             $(".num").val(much - 1);
         }
-    })
+    });
     $(".more").click(function(){
         $(".less").removeClass("special_num");
         much = parseInt($(".num").val());
@@ -109,15 +109,15 @@ $(function(){
         if(much == 100){
             much = 100;
             $(this).addClass("special_num");
-            $(".num").val(100)
+            $(".num").val(100);
         } else if(much == 99){
             $(this).addClass("special_num");
-            $(".num").val(much + 1)
+            $(".num").val(much + 1);
         }else{
             $(this).removeClass("special_num");
             $(".num").val(much + 1);
         }
-    })
+    });
     //点击购买获取商品信息cookie
     var Pcolor;
     $(".buy").bind("click",function(){
@@ -127,12 +127,12 @@ $(function(){
             if($(this).hasClass("special_color")){
                 Pcolor = $(this).html();
             }
-        })
+        });
         var Pstyle = $(".type").html();
         var price = parseFloat($(".span4").html().substring(1));
         var Pnum = parseInt($(".num").val());
         console.log(imgSrc);
-        if(Pcolor != undefined){
+        if(Pcolor !== undefined){
             $.cookie.setAll($(".p1").attr("id"),{
                 "pName" : pName,
                 "imgSrc" : imgSrc,
@@ -143,10 +143,10 @@ $(function(){
             });
             location.href = "../html/shopping.html";
         }else{
-            alert("选个颜色，大兄弟")
+            alert("选个颜色，大兄弟");
         }
-    })
-})
+    });
+});
 $(window).scroll(function(){
     var $t = $(this).scrollTop();
     if($t > 900){
@@ -161,7 +161,7 @@ $(window).scroll(function(){
     }
     $(".top").click(function(){
         $("html,body").scrollTop(0);
-    })
+    });
     //楼梯
     $(".hide ul li").each(function(){
         $(this).click(function(){
@@ -169,17 +169,17 @@ $(window).scroll(function(){
             $(this).addClass("hide_li1").siblings().removeClass("hide_li1");
             var $top = $(".lou").eq($index).offset().top - 50;
             $("html,body").scrollTop($top);
-        })
-    })
+        });
+    });
     //普通商品特效
     $("dl").on("mouseover",function(){
         $(this).stop().animate({
             "opacity" : 0.5
-        },500)
-    })
+        },500);
+    });
     $("dl").on("mouseout",function(){
         $(this).stop().animate({
             "opacity" : 1
-        },500)
-    })
-})
+        },500);
+    });
+});
