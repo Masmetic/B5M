@@ -40,8 +40,9 @@
     color: #666;
     cursor: pointer;
 }
-.endtime{
+.title .endtime{
     float: right;
+    color: red;
 }
 .title span{
     color: #999;

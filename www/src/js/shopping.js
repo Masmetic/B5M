@@ -11,6 +11,9 @@ $(function(){
     var Pstyle = $.cookie.getAll(id).Pstyle;
     var price = parseFloat($.cookie.getAll(id).price).toFixed(2);
     var Pnum = parseInt($.cookie.getAll(id).Pnum);
+    var pri1;
+    var pri2;
+    var pri3;
     //console.log(price);
     if(pName != undefined
         &&imgSrc != undefined
@@ -19,11 +22,11 @@ $(function(){
         &&price != undefined
         &&Pnum != undefined){
         $(".goods").append("<p class='store'></p>");
-        $(".store").append("<input type='checkbox' checked />");
+        $(".store").append("<input type='checkbox' />");
         $(".store").append("<span></span>");
         $(".store span").html(pName);
         $(".goods").append("<div class='info'></div>");
-        $(".info").append("<input type='checkbox' checked id='things' />");
+        $(".info").append("<input type='checkbox' id='things' />");
         $(".info").append("<img />");
         $(".info img").attr({
             "src" : imgSrc
@@ -49,8 +52,13 @@ $(function(){
             $(".num2").val("1");
         }
         $(".all").html(parseFloat($(".pri").html() * $(".num2").val()).toFixed(2));
-        $(".allNum").html($(".num2").val());
-        $(".allMoney").html($(".all").html());
+        if($("#things").is(":checked")){
+            $(".allNum").html($(".num2").val());
+            $(".allMoney").html($(".all").html());
+        }else{
+            $(".allNum").html("0");
+            $(".allMoney").html("0");
+        }
         $.cookie.setAll(id,{
             "pName" : pName,
             "imgSrc" : imgSrc,
@@ -81,8 +89,13 @@ $(function(){
             $(".num2").val(much - 1);
         }
         $(".all").html(parseFloat($(".pri").html() * $(".num2").val()).toFixed(2));
-        $(".allNum").html($(".num2").val());
-        $(".allMoney").html($(".all").html());
+        if($("#things").is(":checked")){
+            $(".allNum").html($(".num2").val());
+            $(".allMoney").html($(".all").html());
+        }else{
+            $(".allNum").html("0");
+            $(".allMoney").html("0");
+        }
         $.cookie.setAll(id,{
             "pName" : pName,
             "imgSrc" : imgSrc,
@@ -91,7 +104,7 @@ $(function(){
             "price" : price,
             "Pnum" : $(".num2").val()
         })
-    })
+    });
     $(".more").click(function(){
         $(".less").removeClass("special_num");
         much = parseInt($(".num2").val());
@@ -107,9 +120,14 @@ $(function(){
             $(this).removeClass("special_num");
             $(".num2").val(much + 1);
         }
+        if($("#things").is(":checked")){
+            $(".allNum").html($(".num2").val());
+            $(".allMoney").html($(".all").html());
+        }else{
+            $(".allNum").html("0");
+            $(".allMoney").html("0");
+        }
         $(".all").html(parseFloat($(".pri").html() * $(".num2").val()).toFixed(2));
-        $(".allNum").html($(".num2").val());
-        $(".allMoney").html($(".all").html());
         $.cookie.setAll(id,{
             "pName" : pName,
             "imgSrc" : imgSrc,
@@ -118,23 +136,37 @@ $(function(){
             "price" : price,
             "Pnum" : $(".num2").val()
         })
-    })
+    });
     //修改总商品数 和 总价
-    $(".allNum").html($(".num2").val());
-    $(".allMoney").html($(".all").html());
+    $("#things, .store input, #allCheck, #allCheck2").on("change",function(){
+        if($(this).is(":checked")){
+            $(".allNum").html($(".num2").val());
+            $(".allMoney").html($(".all").html());
+        }else{
+            $(".allNum").html("0");
+            $(".allMoney").html("0");
+        }
+    });
     //删除商品
     $(".delete, .del").click(function(){
-        $.cookie.unsetAll("lephone");
+        $.cookie.unsetAll(id);
         window.location.reload();
-    })
+    });
     //全选
-    $("#allCheck, #allCheck2").bind("change",function(){
+    $("#allCheck, #allCheck2").on("click",function(){
         if($(this).is(":checked")){
-            $("#content input:checkbox").attr("checked",true);
+            $("#content input:checkbox").prop("checked",true);
         }else{
-            $("#content input:checkbox").attr("checked",false);
+            $("#content input:checkbox").prop("checked",false);
         }
-    })
+    });
+    $(".store input:checkbox").on("click",function(){
+        if($(this).is(":checked")){
+            $("#things").prop("checked",true);
+        }else{
+            $("#things").prop("checked",false);
+        }
+    });
     //展开
     $(".notice span").click(function(){
         if($(this).html() == "展开"){
@@ -150,10 +182,10 @@ $(function(){
         $(this).stop().animate({
             "opacity" : 0.5
         },500)
-    })
+    });
     $("dl").on("mouseout",function(){
         $(this).stop().animate({
             "opacity" : 1
         },500)
-    })
-})
+    });
+});

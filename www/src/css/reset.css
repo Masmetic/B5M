@@ -64,29 +64,80 @@
     width: 1263px;
     height: 474px;
     overflow: hidden;
+    position: relative;
 }
 .con{
     width: 438px;
-    height: 262px;
+    height: 400px;
     margin-left: 403px;
-    margin-top: 101px;
-    background-color: greenyellow;
+    margin-top: 30px;
     padding: 0 15px;
     padding-top: 25px;
 }
 .con .title{
     font-size: 16px;
     color: #666;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 .con p{
     margin-bottom: 15px;
     color: #666;
 }
 .con input{
-    width: 161px;
+    width: 151px;
     height: 28px;
     border:1px solid #ececec;
     margin-left: 20px;
-    margin-right: ;
+    background-color: #f8f8f8;
+    padding-left: 10px;
+    border-radius: 3px;
 }
+.con .newPsd{
+    margin-left: 32px;
+}
+.ok{
+    width: 163px;
+    height: 34px;
+    background-color: #d3d3d3;
+    margin-left: 90px;
+    margin-top: 30px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 34px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 10px 10px #666;
+    border-radius: 3px;
+}
+
+.list{
+    width: 145px;
+    height: 440px;
+    position: absolute;
+    background-color: #fffbf9;
+    top: 10px;
+    left: 50px;
+    padding: 10px;
+}
+.til{
+    border-bottom: 1px solid #dedede;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #333;
+}
+.list ul li{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #666;
+    cursor: pointer;
+}
+.list ul li:hover{
+    color: red;
+}
+.list img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
